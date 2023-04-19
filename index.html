@@ -49,12 +49,19 @@
           <li>Santos Gallegos</li>
           <li>Read the Docs</li>
           <li>Web developer </li>
-          <li><i class="fab fa-python"></i> <i class="fab fa-rust"></i></li>
           <li>Ethical hacker</li>
+          <li><i class="fab fa-python"></i> <i class="fab fa-rust"></i></li>
           <li>
             @stsewd - <a href="https://stsewd.dev/" target="_blank">https://stsewd.dev/</a>
           </li>
         </ul>
+
+        <aside class="notes">
+          Hoy les voy a hablar sobre el ciclo de vida de un proyecto Free Libre Open Source.
+          Durante la presentación para abreviar me refiera a FLOSS
+          simplemente como Open Source. Si, sé la diferencia entre ambos,
+          simplemente es para abreviarlo durante esta presentación.
+        </aside>
       </section>
 
       <section data-background-color="black">
@@ -63,10 +70,11 @@
         <aside class="notes">
           <p>
             Al principio todo era oscuridad.
-            Frente al computador, observando nuestro cursor parpadear,
-            esperando que escribamos algo en la terminal.
+            Estamos frente al computador, observando nuestro cursor parpadear,
+            nuestra terminal esperando que escribamos un comando.
 
-            Un proyecto empieza con una necesidad, o simplemente de una idea.
+            Un proyecto empieza así, empieza con una necesidad, o simplemente con una idea.
+            Algo nuevo o divertido que queremos probar.
           </p>
         </aside>
       </section>
@@ -91,12 +99,16 @@
           Pero nunca lo será.
         </p>
         <p class="fragment">
-        Pero está lo suficientemente cerca para que sea de utilidad a alguien más.
+          Pero está lo suficientemente cerca para que sea de utilidad a alguien más.
         </p>
         <aside class="notes">
-          Furiosamente golpeando el teclado para darle forma a tu idea.
+          Nos quedamos codeando todo el día, toda la noche,
+          furiosamente golpeando el teclado para darle forma a nuestra idea.
           Funciona, pero aún no es perfecto, nunca lo será.
-          Pero está lo suficientemente cerca para que sea de utilidad a alguien más.
+          Pero está lo suficientemente cerca para que sea de utilidad a alguien más,
+          o simplemente para que otras personas vean lo terrible que programamos.
+
+          Así que decidimos compartirlo.
         </aside>
       </section>
 
@@ -118,12 +130,15 @@
           </li>
         </ul>
         <aside class="notes">
-          Al menos que estemos en los 90, usamos un sistema de control de versiones.
+          Al menos que estemos en los 90, debemos usar un sistema de control de versiones.
           Git es una opción popular.
 
           Si no están familiarizados con Git, hay muchos recursos en línea.
-          Es muy útil para que puedas colaborar con otros usuarios,
-          dar crédito a los autores cuando incluyas sus cambios.
+          Un sistema de control de versiones nos permite mantener un registro de los cambios en el código,
+          ayudándonos a responder a las preguntas: ¿Quién? ¿Qué? ¿Cuándo?
+          Además nos facilita la colaboración con otros usuarios,
+          mediante el uso de ramas y parches,
+          y sobre todo podemos dar crédito a los autores cuando incluyas sus cambios.
         </aside>
       </section>
 
@@ -136,251 +151,258 @@
         <aside class="notes">
           El siguiente paso es compartir tu código,
           para ello necesitamos un sitio donde hostearlo.
+          Un lugar que pueda ser accedido fácilmente por el Internet.
           GitHub o GitLab son una opción popular.
         </aside>
       </section>
 
       <section>
+        <h2><s>$ git push</s></h2>
         <h2>¡Pero espera!</h2>
 
         <aside class="notes">
+          Pero espera,
           Pero simplemente subir tu código no es suficiente para que otras personas lo usen.
-          Necesitamos documentar nuestro proyecto.
-          Un simple archivo README.md explicando lo que hace y cómo usarlo es suficiente
+          Necesitamos:documentar nuestro proyecto, y agregarle una licencia.
         </aside>
       </section>
 
       <section>
-        <h2>¿Qué es FLOSS?</h2>
-        <h3>Free Libre Open Source Software</h3>
-        <section>
-          <p>
-            Es un software que es distribiudo de tal manera que el usuario
-            tenga la <strong>libertad</strong> de usarlo para cualquier
-            propósito, estudiarlo, cambiarlo y re-distribuirlo.
-          </p>
+        <h2>Documentación</h2>
 
-          <aside class="notes">
-            Clarificar que sobre los terminos Open Source/Free Software
-            y el titulo de la charla.
-          </aside>
+        <section>
+          <p>README.md</p>
         </section>
 
         <section>
-          <ol start="0">
-            <li>Libertad de usar el programa para cualquier propósito.</li>
-            <li>Libertad de estudiar el funcionamiento del programa y modificarlo.</li>
-            <li>Libertad de re-distribuir copias.</li>
-            <li>Libertad de mejorar el programa y compartirlo al público.</li>
-          </ol>
-          <aside class="notes">
-            Las 4 libertades corresponden al software libre, en open source existen
-            10 premisas, pero estas engloban las 4 libertades.
-          </aside>
-        </section>
-        <section>
-          <blockquote>
-            &ldquo;
-            No es una cuestión de dinero, sino de <strong>libertad</strong>.
-            &rdquo;
-          </blockquote>
-        </section>
-      </section>
-
-      <section>
-        <h2>Malentendidos</h2>
-        <section>
-          <h3><strike>No se gana dinero</strike></h3>
           <p>
-            Se puede cobrar lo que sea por distribuir software libre, este
-            no deja de ser libre por ello.
+            <strong>docs/</strong>
           </p>
-          <p>
-            Además existen varios modelos de negocios basados en FLOSS.
-          </p>
-          <p>
-            Yo trabajo en una compañía donde me pagan por hacer open source (Read the Docs).
-          </p>
-        </section>
-        <section>
-          <h3><strike>Pierdo mi autoría</strike></h3>
-          <p>
-            El software libre es distribuido bajo una licencia, con el
-            fin de mantener las libertades (también puede ser distribuido
-            al dominio público).
-          </p>
-        </section>
-        <section>
-          <h3>
-            <strike>
-              El software libre no es de buena calidad, el privativo es mejor
-            </strike>
-          </h3>
-          <p>
-            Depende de varios factores, pero en general ¿Es mejor algo
-            hecho por un par de <i>expertos</i> o por expertos de todo el
-            mundo?
-          </p>
-        </section>
-        <section>
-          <h3><strike>Es difícil de usar</strike></h3>
-          <p>
-            Aveces parece serlo, debido a que los grandes monopolios ponen
-            trabas al software libre (es difícil colaborar con otros que no
-            quieren colaborar).
-          </p>
-        </section>
-      </section>
-
-      <section>
-        <h2>Beneficios de FLOSS</h2>
-        <section>
-          <h3>Empresas privadas</h3>
           <ul>
-            <li>Menor costo de desarrollo.</li>
-            <li>Software de calidad.</li>
-            <li>Atrae a muy buenos desarrolladores.</li>
-            <li>Estándares abiertos.</li>
-          </ul>
-          <aside class="notes">
-            <ul>
-              <li>Tu software puede ser probado por muchos usuarios.</li>
-              <li>
-                La comunidad se enfoca en traer desarrollar lo que realmente
-                necesitan y de la mejor manera posible.
-              </li>
-              <li>Es más fácil que funcione en conjunto con otros productos/sistemas.</li>
-            </ul>
-          </aside>
-        </section>
-        <section>
-          <h3>Educación</h3>
-          <ul>
-            <li>Reducción de costos.</li>
-            <li>Conocimiento abierto para todos.</li>
-            <li>Enseña a los estudiantes a ser buenos miembros de la comunidad.</li>
-            <li>No a la piratería.</li>
-          </ul>
-          <aside class="notes">
-            <ul>
-              <li>Sin restricciones de uso.</li>
-              <li>Promuevenm normas de respeto mutuo (códigos de conducta)</li>
-              <li>Wikipedia es un buen ejemplo.</li>
-            </ul>
-          </aside>
-        </section>
-        <section>
-          <h3>Personal</h3>
-          <ul>
-            <li>Aprender y compartir a través de la colaboración.</li>
-            <li>Participar en una comunidad que comparte tus mismos intereses.</li>
-            <li>Darte a cononer a nivel mundial.</li>
-            <li>Privacidad y seguridad.</li>
+            <li>Sphinx</li>
+            <li>MkDocs</li>
+            <li>Docusaurus</li>
           </ul>
         </section>
-      </section>
-
-      <section>
-        <h2>Mi experiencia</h2>
-        <section>
-          <img src="img/registro-github.png" alt="">
-          <aside class="notes">
-            Muchos proyectos FLOSS están alojados en GitHub.
-          </aside>
-        </section>
-        <section>
-          <p>
-            <i>No tengo idea qué estoy haciendo.</i>
-          </p>
-          <img src="img/no-tengo-idea-perro.jpg" alt="">
-          <aside class="notes">
-            <ul>
-              <li>No tenía idea por donde empezar.</li>
-              <li>¿Qué debo aprender?</li>
-              <li>¿A quién debo preguntar?</li>
-              <li>Ni siquiera sabía programar del todo.</li>
-            </ul>
-          </aside>
-        </section>
-        <section>
-          <h3>Mi primer pull request (2016)</h3>
-          <i>Lo hice mal, aún no lo aceptan.</i>
-        </section>
-        <section>
-          <ul>
-            <li>Subir proyectos de la U.</li>
-            <li>Subir proyectos personales.</li>
-            <li>Observar otros proyectos.</li>
-            <li>Colaborar de vez en cuando con traducciones.</li>
-          </ul>
-        </section>
-        <section>
-          <img src="img/grafico-contribuciones.png" alt="">
-        </section>
-      </section>
-
-      <section>
-        <h2>
-          ¡He aprendido un montón!
-        </h2>
-        <img src="img/python.jpg" alt="" />
         <aside class="notes">
-          <ul>
-            <li>He aprendido nuevas tecnologías</li>
-            <li>He conocido nuevas personas</li>
-            <li>He compartido con la comunidad</li>
-            <li>He conseguido un trabajo</li>
-          </ul>
-        </aside>
-      </section>
+          Documentar nuestro proyecto puede ser una tarea aburrida,
+          pero un simple archivo README explicando lo que hace y cómo usarlo es suficiente
+          para empezar.
+          O si nuestro proyecto es mucho más grande,
+          podríamos considerar algo más estructurado, usando herramientas para crear documentación
+          como Sphinx, MkDocs o Docusaurus.
 
-      <section class="center">
-        <h1>¡Tú también puedes hacerlo!</h1>
-        <aside class="notes">
-          <p>
-            Empezar a colaborar puede ser aterrador (aún lo es para mi).
-            Aprovecha este hacktoberfest para hacer muchas preguntas.
-          </p>
+          Y recuerda, que la documentación no necesariamente está siempre en archivos separados,
+          puede estar en el mismo código, en forma de docstrings o comentarios.
         </aside>
       </section>
 
       <section>
-        <h2>FLOSS fuera de la pantalla</h2>
-        <h4>
-          ...o la razón por la que están en este evento sin haber pagado un centavo.
-        </h4>
-        <img src="img/pyec.png" height="350px" alt="">
-        <aside class="notes">
-          <p>
-            Para mi FLOSS también se trata de compartir el conocimiento con la
-            comunidad, aprender entre todos. Darles a conocer a las personas
-            esa libertad.
-          </p>
-          <p>
-            Ni siquiera hace falta que sepas programar.
-          </p>
-        </aside>
-      </section>
-
-      <section>
-        <h2>Referencias y recursos adicionales</h2>
+        <h2>¿Qué incluir en la documentación?</h2>
         <ul>
           <li>
-            <a href="https://opensource.guide/">
-              Guías de Código Abierto
+            Descripción del proyecto
+          </li>
+          <li>
+            Instalación
+          </li>
+          <li>
+            Uso y ejemplos
+          </li>
+          <li>
+            Cómo contribuir
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Licencia</h2>
+        <p>
+          Reglas y acuerdos que las personas que usan o modifican tu proyecto deben seguir.
+        </p>
+        <aside class="notes">
+          Una licencia es esencial para que tu proyecto pueda ser usado por otras personas.
+          Especifica ciertas reglas y acuerdos que las personas que usan o modifican tu proyecto deben seguir.
+        </aside>
+      </section>
+
+      <section>
+        <h2>¿Qué licencia usar?</h2>
+        <h3>LICENSE</h3>
+        <ul>
+          <li>GPL, AGPL, LGPL</li>
+          <li>MIT</li>
+          <li>Apache</li>
+          <li>Creative Commons</li>
+        </ul>
+
+        <aside class="notes">
+          Qué licencia usar depende de tu proyecto, tus objetivos y de tus necesidades.
+          Unas opciones populares son la familia de las licencias GPL,
+          o una licencia más permisiva como MIT o Apache.
+          Y si tienes un proyecto que no sea código,
+          puedes usar una licencia Creative Commons,
+          que es una licencia más adecuada para este tipo de proyectos.
+        </aside>
+      </section>
+
+      <section>
+        <h2>¿Qué licencia usar?</h2>
+        <h3>LICENSE</h3>
+        <ul>
+          <li>
+            <a href="https://docs.codeberg.org/getting-started/licensing/">
+              https://docs.codeberg.org/getting-started/licensing/
             </a>
           </li>
           <li>
-            <a href="https://opensource.org/">
-              Open Source Initiative
-            </a>
-          </li>
-          <li>
-            <a href="https://www.fsf.org/">
-              Free Software Foundation
+            <a href="https://choosealicense.com/">
+              https://choosealicense.com/
             </a>
           </li>
         </ul>
+        <aside class="notes">
+          Para escoger tu licencia puedes usar la guía de Codeberg,
+          o la web choosealicense.com.
+
+          Y usar una licencia en tu proyecto es tan fácil como crear un archivo llamado LICENSE
+          en la raíz de tu proyecto, o si te quieres poner más extricto,
+          puedes poner tu licencia en cada archivo.
+        </aside>
+      </section>
+
+      <section>
+        <h2>$ git push</h2>
+
+        <p>
+          https://github.com/{your-username}/awesome-project
+        </p>
+        <img src="img/thumbs-up.gif" alt="Kid in computer, thumbs up meme">
+
+        <aside class="notes">
+          Ahora si, tu proyecto está listo para ser compartido con todo el mundo.
+          TODO EL MUNDO
+        </aside>
+      </section>
+
+      <section>
+        <img src="img/desert.gif" alt="desert tumbleweed">
+
+        <aside class="notes">
+          Al menos que seas alguien popular en el mundo de la programación,
+          una compañía, o inviertas en marketing, o tu proyecto sea revolucionario,
+          va a pasar un tiempo hasta que más personas empiecen a descubrir tu proyecto.
+          Y mucho más hasta que alguien lo use.
+        </aside>
+      </section>
+
+      <section>
+        <h2>El primer issue</h2>
+
+        <img src="img/issue.png" alt="">
+
+        <p>
+          ¡Yay!
+          ¡Alquien está usanto du proyecto!
+        </p>
+        <p class="fragment">
+          .. o está intentando usarlo.
+        </p>
+
+        <aside class="notes">
+          Una persona está usando tu proyecto!
+          O está intentando usarlo, y ha encontrado un problema.
+
+          Esta es la primera señal de que tu proyecto está siendo usado,
+          y es una oportunidad para mejorar tu proyecto.
+
+          Puede que sea un bug, o que la documentación no sea clara.
+          Como lo dije al principio, tu proyecto no es perfecto,
+          y siempre hay cosas que mejorar.
+
+          Este es un ejemplo de un issue en uno de mis proyectos.
+        </aside>
+      </section>
+
+      <section>
+        <h2>El primer pull request</h2>
+        <h3>$ git merge feature</h3>
+        <img src="img/pull-request.png" alt="">
+        <aside class="notes">
+          Probablemente tú vas a ser el autor del primer pull request.
+          Pero conforme tu proyecto crezca, más usuarios experimentados van a querer contribuir.
+          Algunas van a adaptar tu proyecto para sus necesidades,
+          Van a querer enviarte esas mejoras.
+          Las mismas personas que reportaron issues van a querer contribuir con soluciones.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Ups, me convertí en un maintainer</h2>
+
+        <section>
+          <ul>
+            <li>
+              Responder preguntas
+            </li>
+            <li>
+              Solucionar problemas
+            </li>
+            <li>
+              Tomar decisiones
+            </li>
+            <li>
+              Code review
+            </li>
+            <li>
+              Aceptar pull requests
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <p>No estás obligado a hacer nada de esto</p>
+          <ul>
+            <li>
+              <s>Responder preguntas</s>
+            </li>
+            <li>
+              <s>Solucionar problemas</s>
+            </li>
+            <li>
+              <s>Tomar decisiones</s>
+            </li>
+            <li>
+              <s>Code review</s>
+            </li>
+            <li>
+              <s>Aceptar pull requests</s>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="notes">
+          Conforme tu proyecto crece, tus usuarios van a esperar que estés disponible para responder sus preguntas,
+          solucionar problemas, hacer code review, y aceptar pull requests, etc.
+          Puede consumir mucho tiempo, y puede llegar a ser frustrante.
+          Mientras sigas disfrutando de tu proyecto, está bien,
+          pero si llega a ser una carga, recuerda que no estás obligado a mantenerlo.
+          Nadie te está pagando por hacerlo, y no hay nada de malo en dejarlo morir.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Archivando un proyecto</h2>
+
+        <aside class="notes">
+          Puedes buscar ayuda haciendo maintainer a un contribuidor activo,
+          o simplemente dejar que la comunidad haga un fork.
+        </aside>
+      </section>
+
+      <section>
+        <h1>¡Tú también puedes hacerlo!</h1>
+        <h2>¡Crea, aprende y comparte!</h2>
         <footer class="fragment">
           <p>
             <small class="text-center">
