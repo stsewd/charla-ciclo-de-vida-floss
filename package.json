@@ -1,11 +1,16 @@
 {
+  "name": "charla-ciclo-de-vida-floss",
+  "version": "1.0.0",
+  "author": "Santos Gallegos <stsewd@proton.me>",
   "scripts": {
     "start": "live-server --port=8080"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "highlight.js": "^11.7.0",
-    "live-server": "^1.2.2",
     "reveal.js": "^4.4.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
