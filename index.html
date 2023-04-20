@@ -58,7 +58,7 @@
 
         <aside class="notes">
           Hoy les voy a hablar sobre el ciclo de vida de un proyecto Free Libre Open Source.
-          Durante la presentación para abreviar me refiera a FLOSS
+          Durante la presentación para abreviar me referiré a FLOSS
           simplemente como Open Source. Si, sé la diferencia entre ambos,
           simplemente es para abreviarlo durante esta presentación.
         </aside>
@@ -126,7 +126,7 @@
             Colaboración con otros usuarios.
           </li>
           <li>
-            Dar crédito a los autores cuando incluyas sus cambios.
+            Dar crédito a contribuidores cuando incluyas sus cambios.
           </li>
         </ul>
         <aside class="notes">
@@ -138,7 +138,7 @@
           ayudándonos a responder a las preguntas: ¿Quién? ¿Qué? ¿Cuándo?
           Además nos facilita la colaboración con otros usuarios,
           mediante el uso de ramas y parches,
-          y sobre todo podemos dar crédito a los autores cuando incluyas sus cambios.
+          y sobre todo podemos dar crédito a otras personas que contribuyan a tu proyecto cuando incluyas sus cambios.
         </aside>
       </section>
 
@@ -151,8 +151,12 @@
         <aside class="notes">
           El siguiente paso es compartir tu código,
           para ello necesitamos un sitio donde hostearlo.
-          Un lugar que pueda ser accedido fácilmente por el Internet.
+          Un lugar que pueda ser accedido fácilmente desde el Internet.
           GitHub o GitLab son una opción popular.
+
+          Y además incluyen soporte para issues y pull requests,
+          y muchas otras cosas más que nos ayudarán a mantener nuestro proyecto,
+          e interactuar con otros usuarios.
         </aside>
       </section>
 
@@ -161,9 +165,8 @@
         <h2>¡Pero espera!</h2>
 
         <aside class="notes">
-          Pero espera,
-          Pero simplemente subir tu código no es suficiente para que otras personas lo usen.
-          Necesitamos:documentar nuestro proyecto, y agregarle una licencia.
+          Pero espera, simplemente subir tu código no es suficiente para que otras personas lo usen.
+          Necesitamos documentar nuestro proyecto, y agregarle una licencia.
         </aside>
       </section>
 
@@ -172,6 +175,11 @@
 
         <section>
           <p>README.md</p>
+          <aside class="notes">
+            Documentar nuestro proyecto puede ser una tarea aburrida,
+            pero un simple archivo README explicando lo que hace y cómo usarlo es suficiente
+            para empezar.
+          </aside>
         </section>
 
         <section>
@@ -183,18 +191,20 @@
             <li>MkDocs</li>
             <li>Docusaurus</li>
           </ul>
-        </section>
-        <aside class="notes">
-          Documentar nuestro proyecto puede ser una tarea aburrida,
-          pero un simple archivo README explicando lo que hace y cómo usarlo es suficiente
-          para empezar.
-          O si nuestro proyecto es mucho más grande,
-          podríamos considerar algo más estructurado, usando herramientas para crear documentación
-          como Sphinx, MkDocs o Docusaurus.
+          <aside class="notes">
+            O si nuestro proyecto es mucho más grande,
+            podríamos considerar algo más estructurado, usando herramientas para crear documentación
+            como Sphinx, MkDocs o Docusaurus.
 
-          Y recuerda, que la documentación no necesariamente está siempre en archivos separados,
-          puede estar en el mismo código, en forma de docstrings o comentarios.
-        </aside>
+            Incluso existe un framework, llamado Diataxis, que nos ayuda a organizar la documentación.
+            Y pueden usar Read the Docs para hostear su documentación (fin del espacio publicitario).
+
+            Y recuerda, que la documentación no necesariamente está siempre en archivos separados,
+            puede estar en el mismo código, en forma de docstrings o comentarios.
+            Estos pueden ser de utilidad para otros desarrolladores que quieran contribuir a tu proyecto.
+          </aside>
+        </section>
+
       </section>
 
       <section>
@@ -213,16 +223,25 @@
             Cómo contribuir
           </li>
         </ul>
+
+        <aside class="notes">
+          Como les dije, no tiene que ser algo muy elaborado.
+          Simplemente explicando qué es lo que hace tu proyecto,
+          como instalarlo y usarlo basta.
+
+          Si quieres atraer a más colaboradores, puedes incluir instrucciones sobre cómo contribuir.
+        </aside>
       </section>
 
       <section>
         <h2>Licencia</h2>
         <p>
-          Reglas y acuerdos que las personas que usan o modifican tu proyecto deben seguir.
+          Reglas y acuerdos que las personas que usan, modifican o distribuyen tu proyecto deben seguir.
         </p>
         <aside class="notes">
           Una licencia es esencial para que tu proyecto pueda ser usado por otras personas.
-          Especifica ciertas reglas y acuerdos que las personas que usan o modifican tu proyecto deben seguir.
+          Especifica ciertas reglas y acuerdos que las personas que usan, modifican o distribuyen tu proyecto deben
+          seguir.
         </aside>
       </section>
 
@@ -280,12 +299,14 @@
         <img src="img/thumbs-up.gif" alt="Kid in computer, thumbs up meme">
 
         <aside class="notes">
-          Ahora si, tu proyecto está listo para ser compartido con todo el mundo.
+          Ahora si, ya tenemos nuestro proyecto documentado y con una licencia,
+          el proyecto está listo para ser compartido con todo el mundo.
           TODO EL MUNDO
         </aside>
       </section>
 
       <section>
+        <h2>¿Y ahora qué?</h2>
         <img src="img/desert.gif" alt="desert tumbleweed">
 
         <aside class="notes">
@@ -303,7 +324,7 @@
 
         <p>
           ¡Yay!
-          ¡Alquien está usanto du proyecto!
+          ¡Alquien está usanto tu proyecto!
         </p>
         <p class="fragment">
           .. o está intentando usarlo.
@@ -321,6 +342,7 @@
           y siempre hay cosas que mejorar.
 
           Este es un ejemplo de un issue en uno de mis proyectos.
+          Hasta ahora me emociona cuando alguien abre un issue.
         </aside>
       </section>
 
@@ -330,10 +352,18 @@
         <img src="img/pull-request.png" alt="">
         <aside class="notes">
           Probablemente tú vas a ser el autor del primer pull request.
-          Pero conforme tu proyecto crezca, más usuarios experimentados van a querer contribuir.
+          Pero conforme tu proyecto crezca, más usuarios experimentados van a querer contribuir
+          (ayuda mucho que tengas una guía de como contribuir).
           Algunas van a adaptar tu proyecto para sus necesidades,
           Van a querer enviarte esas mejoras.
           Las mismas personas que reportaron issues van a querer contribuir con soluciones.
+
+          Este es un ejemplo de un pull request en uno de mis proyectos.
+          Les dije que me emociona cuando alguien abre un issue,
+          me emociona más cuando alguien abre un pull request!
+
+          Incluso si eres la única persona que contribuye a tu proyecto,
+          siempre procura hacer tus cambios en público, para que otros puedan ver el progreso
         </aside>
       </section>
 
@@ -358,6 +388,23 @@
               Aceptar pull requests
             </li>
           </ul>
+
+          <aside class="notes">
+            Conforme tu proyecto crece, tus usuarios van a esperar que estés disponible para responder sus preguntas,
+            solucionar problemas, hacer code review, y aceptar pull requests, etc.
+            Estas son las tareas principales de un maintainer.
+            Puede consumir mucho tiempo, y puede llegar a ser frustrante.
+            Mientras sigas disfrutando de tu proyecto, está bien.
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/user-vs-maintainer.jpg" alt="">
+
+          <aside class="notes">
+            No siempre tus usuarios se dan cuenta
+            del trabajo que implica mantener un proyecto.
+          </aside>
         </section>
 
         <section>
@@ -379,24 +426,135 @@
               <s>Aceptar pull requests</s>
             </li>
           </ul>
+          <aside class="notes">
+            Pero si llega a ser una carga, recuerda que no estás obligado a mantenerlo.
+            Nadie te está pagando por hacerlo, y no hay nada de malo en ignorar los issues y pull requests.
+            No hay nada de malo en dejar morir a tu proyecto.
+            Pero antes de dejarlo morir, puedes buscar ayuda.
+          </aside>
         </section>
+      </section>
 
+      <section>
+        <h2>Buscando ayuda</h2>
+        <ul>
+          <p>
+            Invita a contribuidores activos a que sean parte del proyecto.
+          </p>
+        </ul>
         <aside class="notes">
-          Conforme tu proyecto crece, tus usuarios van a esperar que estés disponible para responder sus preguntas,
-          solucionar problemas, hacer code review, y aceptar pull requests, etc.
-          Puede consumir mucho tiempo, y puede llegar a ser frustrante.
-          Mientras sigas disfrutando de tu proyecto, está bien,
-          pero si llega a ser una carga, recuerda que no estás obligado a mantenerlo.
-          Nadie te está pagando por hacerlo, y no hay nada de malo en dejarlo morir.
+          Si no quieres estresarte con el mantenimiento de tu proyecto,
+          comparte ese estrés con alguien más!
+          Invita a contribuidores activos a que sean parte del proyecto.
+          Esa persona que siempre está comentando en los issues, o enviando pull requests.
+
+          Es muy importante involucrar a más personas en tu proyecto,
+          esto es para aumentar la probabilidad de que tu proyecto siga vivo
+          (el factor del autobús).
         </aside>
       </section>
 
       <section>
-        <h2>Archivando un proyecto</h2>
+        <h2>Dejándolo ir</h2>
+        <p>
+          Deja que la comunidad se haga cargo del proyecto.
+        </p>
+        <div class="fragment">
+          <p>
+            O que nazca un fork.
+          </p>
+          <img src="img/baby-fork.jpg" alt="">
+        </div>
+        <aside class="notes">
+          Si una comunidad se ha formado alrededor de tu proyecto,
+          y hay personas que están interesadas en mantenerlo,
+          puedes dejar que la comunidad se haga cargo del proyecto.
+          Puede llegar un punto en el que ya no sea necesario
+          que tú estés involucrado en el mantenimiento del proyecto.
+
+          O puede que otra persona esté interesada en seguir manteniendo tu proyecto,
+          pero bajo un nuevo hogar.
+          Esto lo conocemos como fork, básicamente es una copia de tu proyecto
+          mantenido por otra persona.
+
+          Hay otras razones por las que un fork pasa, pero por el tiempo no vamos a hablar de eso hoy.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Archivando tu proyecto</h2>
+
+        <img src="img/archiving.png" alt="">
 
         <aside class="notes">
-          Puedes buscar ayuda haciendo maintainer a un contribuidor activo,
-          o simplemente dejar que la comunidad haga un fork.
+          Si nada de lo anterior funcionó,
+          o simplemente no quieres seguir manteniendo tu proyecto,
+          puedes archivarlo.
+
+          Archivar un proyecto significa que ya no van a haber cambios en él,
+          no se aceptarán más pull requests, y no se aceptarán más issues.
+          Pero esto no significa que el proyecto va a desaparecer.
+          Usuarios aún van a poder usarlo, y seguirán teniendo acceso al código fuente.
+          Un fork puede nacer de un proyecto archivado (afterlife).
+
+          GitHub tiene una opción para archivar un proyecto,
+          de tal manera que queda en estado de solo lectura.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Otras cosas de las que no hablamos...</h2>
+        <ul>
+          <li>
+            Código de conducta
+          </li>
+          <li>
+            CI/CD
+          </li>
+          <li>
+            Teams
+          </li>
+          <li>
+            Financiamiento
+          </li>
+          <li>
+            Políticas de soporte y versionamiento
+          </li>
+          <li>
+            Políticas de seguridad
+          </li>
+          <li>
+            CLA (contributor license agreement)
+          </li>
+          <li>
+            RFCs (request for comments)
+          </li>
+        </ul>
+        <p>
+          <a href="https://opensource.guide/">https://opensource.guide/</a>
+        </p>
+
+        <aside class="notes">
+          Hay muchas otras cosas que no hablamos hoy, entre estas.
+          Conforme tu proyecto crezca, vas a necesitar varias de estas cosas.
+
+          Un código de conducta son reglas que los usuarios deben seguir
+          cuando interactúan con tu proyecto o contribuyen a él.
+
+          CI/CD, una manera de hacer menos aterrador contribuir a tu proyecto,
+          es tener pruebas automatizadas, así tu y tus contribuidores
+          pueden estar un poco más seguros que sus cambios no introducen bugs.
+
+          Si tu proyecto es grande, es útil tener a un equipo
+          dedicado a ciertas áreas del proyecto.
+
+          Y hasta puedes hacer dinero con tu proyecto,
+          puede ser a través de donaciones, o algún otro modelo de negocio.
+
+          Vas a necesitar ser claro con tus usuarios sobre las versiones que soportas,
+          y comunicar claramente qué es lo que ha cambiado en tu proyecto, si existe un cambio
+          que es incompatible, etc.
+          Políticas de seguridad, como reportar vulnerabilidades, etc.
         </aside>
       </section>
 
@@ -436,6 +594,16 @@
             </small>
           </p>
         </footer>
+
+        <aside class="notes">
+          Todos los proyectos ayudan a la comunidad open source en general,
+          no importa si tu proyecto es popular o no, si ayuda al menos a una persona,
+          ya vale la pena.
+
+          Recuerda que no estás obligado a mantener tu proyecto,
+          o aceptar cada pull request que llegue.
+          Pero tampoco te olvides de tu comunidad que te ayudó a crecer.
+        </aside>
       </section>
     </div>
   </div>
